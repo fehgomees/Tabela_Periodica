@@ -1,0 +1,286 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/fundo-de-galaxia-realista_23-2148991322.avif);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    overflow-x: hidden;
+}
+
+.titulo {
+    font-family: "Gorditas", serif;
+    -webkit-text-stroke: white 2px;
+    color: #43f0d9;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+/* ESTILIZAÇÃO DA TABELA */
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    line-height: 2px;
+    padding-left: 1px;
+    padding-right: 40px;
+}
+
+.tabela2 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.horizontal {
+    color: rgb(201, 253, 124);
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+.vertical {
+    color: #ffee00;
+    text-align: center;
+    font-size: 10px;
+}
+
+td {
+    text-align: center;
+    border: 1px solid #04026d;
+    border-radius: 8px;
+    padding: 1px;
+}
+
+td:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 4px outset;
+}
+
+/* LINHAS SEM CONTEÚDO - NÃO APARECER */
+td:empty {
+    visibility: hidden;
+}
+
+td h5 {
+    text-align: end;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 3px;
+    margin: 6px;
+    font-size: 10px;
+}
+
+td h3 {
+    font-size: 18px;
+    padding-bottom: 2px;
+}
+
+td h4 {
+    font-size: 10px;
+}
+
+/* CORES DOS GRUPOS */
+.roxo-escuro {
+    background-color: rgb(85, 2, 85);
+    color: white;
+}
+
+.azul:hover {
+    border-color: #60edf5;
+}
+
+.amarelo {
+    background-color: #ffd900;
+    color: rgb(59, 58, 58);
+}
+
+.verde:hover {
+    border-color: #42f542;
+}
+
+.laranja {
+    background-color: #ff6105;
+    color: white;
+}
+
+.amarelo:hover {
+    border-color: #f7f70d;
+}
+
+.roxo {
+    background-color: #a74fca;
+    color: white;
+}
+
+.roxo:hover {
+    border-color: #e85df7;
+}
+
+
+.rosa {
+    background-color: palevioletred;
+    color: white;
+}
+
+.rosa:hover {
+    border-color: #f389ad;
+}
+
+.verde{
+    background-color: #88f10e;
+    color: rgb(59, 58, 58);
+}
+
+.laranja:hover {
+    border-color: #fd9f4c;
+}
+
+.azul-tiffany {
+    background-color: #04bea6;
+    color: white;
+}
+
+.azulClaro:hover {
+    border-color: #63e5f6;
+}
+
+.vermelho {
+    background-color: #ff0000;
+    color: white;
+}
+
+.vermelho:hover {
+    border-color: #b30f03;
+}
+
+.vermelho1 {
+    background-color: #fc1606;
+    color: white;
+}
+
+.vermelho1:hover {
+    border-color: #ff5246;
+}
+
+.vinho {
+    background-color: #a7042d;
+    color: white;
+}
+
+.vinho:hover {
+    border-color: #c61c2a;
+}
+
+.vinho1 {
+    background-color: #830128;
+    color: white;
+}
+
+.vinho1:hover {
+    border-color: #3b030754;
+}
+
+/*RODA PÉ*/
+.footer {
+    color: #63e5f6;
+    text-align: center;
+    font-size: 12px;  
+}
+
+.footer-caixa {
+    background-color: #5a0a42;
+    color: whitesmoke;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+/* Adicionando regra de mídia para 1024px */
+@media screen and (max-width: 1024px) {
+    .titulo {
+        font-size: 25px;
+    }
+    .horizontal {
+        font-size: 10px;
+    }
+    
+    .vertical {
+        font-size: 10px;
+    }
+
+    table {
+        padding-right: 20px;
+    }
+    td {
+        border-width: 7;
+    }
+    td h5 {
+        font-size: 8px;
+    }
+    td h3 {
+        font-size: 14px;
+    }
+    td h4 {
+        font-size: 6px;
+    }
+    footer {
+        font-size: 10px;
+    }
+}
+
+
+/* RESPONIVO*/
+@media screen and (max-width: 768px) {
+    .titulo {
+        font-size: 3vw;
+        margin-top: 10px;
+    }
+
+    .tabela2 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .horizontal {
+        font-size: 12px; 
+    }
+
+    .vertical {
+        font-size: 8px; 
+    }
+
+    td {
+        padding: 5px; 
+    }
+}
+
+/* RESPONSIVO*/
+@media screen and (max-width: 480px) {
+    .titulo {
+        font-size: 2.5vw;
+        margin-top: 5px;
+    }
+
+    .tabela2 {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .horizontal {
+        font-size: 10px;
+    }
+
+    .vertical {
+        font-size: 6px;
+    }
+
+    td {
+        padding: 3px;
+    }
+}
